@@ -1,0 +1,50 @@
+
+.arуa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    height: 400px;
+    background-color: #dce5e7;
+
+}
+
+.statistics{
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+background-color: white;
+border: inherit;
+width: 400px;
+height: 150px;
+
+}
+
+.title{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.statList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.item{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 80px;
+height: 80px;
+
+}
+/* .label{
+    display: flex;  
+
+}
+.percentage{
+    display: flex;
+} */
