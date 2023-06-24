@@ -1,4 +1,4 @@
-// import { Container } from 'components/Container/Container';
+import PropTypes  from 'prop-types'
 import css from '../Profile/Profile.module.css';
 
 export const Profile = (props) => {
@@ -13,8 +13,8 @@ export const Profile = (props) => {
         <p className={css.location}>{location}</p>
       </div>
 
-      <ul className={css.stats}>
-        <li className={css.item}>
+      <ul  className={css.stats}>
+        <li  className={css.item}>
           <span className={css.label}>Followers</span>
           <span className={css.quantity}>{stats.followers}</span>
         </li>
@@ -31,3 +31,11 @@ export const Profile = (props) => {
 </div>
   );
 };
+
+Profile.propTypes = {
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired, 
+  stats: PropTypes.object.isRequired
+}

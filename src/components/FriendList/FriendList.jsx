@@ -1,7 +1,7 @@
+import PropTypes  from 'prop-types'
 import { FriendListItem } from './FriendsListItem';
 
 export const FriendList = ({friends}) => {
-
   return (
     <ul >
       {friends.map(friend => (
@@ -11,3 +11,7 @@ export const FriendList = ({friends}) => {
     </ul>
   );
 };
+
+FriendList.propTypes = {
+  friends: PropTypes.array.isRequired
+}

@@ -1,3 +1,4 @@
+import PropTypes  from 'prop-types'
 import css from '../Statistics/Statistics.module.css'
 
 
@@ -21,3 +22,8 @@ export const Statistics = ({ stats, title }) => {
     </div>
     );
 };
+
+Statistics.propTypes = {
+  stats: PropTypes.array.isRequired, 
+  title: PropTypes.string
+}

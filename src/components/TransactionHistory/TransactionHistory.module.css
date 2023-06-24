@@ -1,9 +1,6 @@
-.zzz {
+.transactionsTable {
     display: inline-table;
-    /* display: flex;
-    flex-direction: column; */
     border: solid;
-    /* background-color: white; */
     width: 600px;
     border-collapse: collapse;
 

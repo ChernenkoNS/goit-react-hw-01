@@ -1,3 +1,4 @@
+import PropTypes  from 'prop-types'
 import css from '../Container/Container.module.css'
 
 export const Container = ({children}) => {
@@ -6,4 +7,8 @@ export const Container = ({children}) => {
             {children}
         </div>
     )
+}
+
+Container.propTypes = {
+    children:PropTypes.array.isRequired
 }
