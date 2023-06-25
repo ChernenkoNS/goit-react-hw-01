@@ -18,6 +18,6 @@ export const FriendListItem = ({ friend }) => {
 };
 
 FriendListItem.propTypes = {
-  friend:PropTypes.array.isRequired,
+  friend:PropTypes.object.isRequired,
 
 }
